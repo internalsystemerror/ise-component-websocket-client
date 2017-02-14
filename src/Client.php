@@ -82,7 +82,6 @@ class Client extends AbstractWebSocket
             ));
         }
 
-        echo "\t", 'Connected...', PHP_EOL;
         // Set connected
         $this->connected = true;
     }
@@ -100,7 +99,6 @@ class Client extends AbstractWebSocket
             $this->close();
         }
         $this->socket = null;
-        echo "\t", 'Disconnected...', PHP_EOL;
     }
 
     /**
