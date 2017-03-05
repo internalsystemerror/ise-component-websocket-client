@@ -8,7 +8,7 @@ class Client extends AbstractWebSocket
     /**
      * {@inheritDoc}
      */
-    public function __construct(array $options)
+    public function __construct(array $options = [])
     {
         if (!isset($options['uri'])) {
             throw new Exception\InvalidArgumentException('Options array requires a key "uri"');
